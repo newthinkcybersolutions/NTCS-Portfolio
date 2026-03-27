@@ -1,0 +1,35 @@
+:root {
+  /* Colors */
+  --primary-color: #4db6d9;       /* lightblue */
+  --secondary-color: #6362fe;     /* Indigo */
+  --hightlight-color: yellow;        /* Green */
+
+  --bg-color: #0f172a;            /* Dark Background */
+  --card-bg: #1e293b;             /* Card Background */
+  --text-color: #e2e8f0;          /* Light Text */
+  --muted-text: #94a3b8;          /* Secondary Text */
+
+  /* Typography */
+  --font-main: 'Poppins', sans-serif;
+  --font-size-sm: 16px;
+  --font-size-md: 20px;
+  --font-size-lg: 24px;
+  --font-size-xl: 36px;
+
+  /* Spacing */
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+
+  /* Border Radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  /* Shadows */
+  --shadow-light: 0 4px 10px rgba(0,0,0,0.2);
+  --shadow-heavy: 0 10px 30px rgba(0,0,0,0.5);
+
+  /* Transition */
+  --transition: all 0.3s ease;
+}

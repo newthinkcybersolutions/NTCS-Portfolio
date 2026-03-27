@@ -1,0 +1,108 @@
+header{
+    position: sticky;
+    top: 0;
+}
+nav {
+    position: relative;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: var(--font-size-md);
+    transition: var(--transition);
+}
+
+.nav-links a:hover {
+    color: var(--hightlight-color);
+}
+
+#menu-icon {
+    position: absolute;
+    display: block;
+    opacity: 0;
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media(max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "header" "main" "sidebar" "footer";
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 28px;
+        color: white;
+        text-align: right;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: var(--primary-color);
+        flex-direction: column;
+        align-items: center;
+        display: none !important;
+        padding: 10px 0;
+    }
+
+    #menu-icon:checked~.nav-links {
+        display: flex !important;
+    }
+}
+
+#hero{
+    min-height: 70vh;
+}
+
+.card{
+    padding: var(--spacing-md);
+    background-color: var(--card-bg);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-heavy);
+    transition: all 0.3s ease;
+}
+.card:hover{
+    transform: scale(1.04);
+}
+.card h2{
+    color: var(--primary-color);
+}
+.card p{
+    color: var(--text-color);
+}
+.card img{
+    height: 90%;
+    width: 100%;
+}
+
+.contact-form{
+    padding: var(--spacing-md);
+    background-color: var(--card-bg);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-heavy); 
+}
+.contact-form input, .contact-form textarea{
+    width: 98%;
+    padding: var(--spacing-sm);
+    border: none;
+    border-radius: var(--radius-sm);
+    margin-top: 20px;   
+}
+.contact-form textarea{
+    height: 60px;
+    resize: none;
+    margin-bottom: 20px
+}
+footer a:hover{
+    color: var(--hightlight-color);
+}
